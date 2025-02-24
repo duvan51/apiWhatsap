@@ -1,0 +1,25 @@
+# 📦 Dependencias de Node.js
+node_modules/
+package-lock.json
+
+# ⚙️ Configuración del entorno
+.env
+
+# 🚀 Archivos de compilación y caché
+dist/
+build/
+.cache/
+.nyc_output/
+coverage/
+
+# 📂 Configuración del editor
+.vscode/
+.idea/
+.DS_Store
+
+# ⚡ Logs y depuración
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,44 @@
+@apiusers= http://localhost:4000/users
+@enviowhatsap = http://localhost:4000/users/send-whatsapp
+
+
+
+###
+GET {{apiusers}}
+
+###
+POST {{apiusers}}
+Content-Type: application/json
+
+{
+    "Name":"duvan",
+    "whattsap":"3132012218",
+    "email":"duvan@gmail.com",
+    "password":"duvan"
+ 
+}
+
+
+
+### use of whatsap web
+
+POST {{apiusers}}/startSession
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+
+
+
+
+
+
+###
+POST {{enviowhatsap}}
+Content-Type: application/json
+
+{
+    "telefono":"3132012218",
+    "mensaje":"esta super bien jejeje"
+}
