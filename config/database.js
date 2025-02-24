@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 
 // Obtener el entorno actual
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 
 // Cargar el archivo `.env` correspondiente al entorno
 dotenv.config({ path: env === 'production' ? '.env.production' : '.env.development' });

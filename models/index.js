@@ -4,7 +4,7 @@ import dbconfig from '../config/database.js';
 // Importación de los modelos
 import UserModel from './user.js';
 
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const config = dbconfig[env];
 
 
