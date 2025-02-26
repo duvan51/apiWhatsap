@@ -42,3 +42,34 @@ Content-Type: application/json
     "telefono":"3132012218",
     "mensaje":"esta super bien jejeje"
 }
+
+
+
+
+
+
+
+
+
+
+################### deploy ####################
+
+@apiusersDeploy= https://api-watsap-6f2e410976e1.herokuapp.com/users
+@enviowhatsap = https://api-watsap-6f2e410976e1.herokuapp.com/users/send-whatsapp
+
+
+
+###
+###
+GET {{apiusersDeploy}}
+####
+POST {{apiusersDeploy}}
+Content-Type: application/json
+
+{
+    "Name":"duvan",
+    "whattsap":"3132012218",
+    "email":"duvan@gmail.com",
+    "password":"duvan"
+ 
+}
